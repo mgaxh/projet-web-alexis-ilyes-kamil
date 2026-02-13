@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #163767;
     text-align: center;
-    margin-top: 10%;
 }
 
 h1 {
@@ -16,22 +15,118 @@ header #batiment {
     display: block;
     margin: auto;
     width: 100%;
+    margin-top: 10%;
 }
 header #logo {
-    position: absolute;
     top: 10px;
     left: 10px;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 nav a {
-    color: #000000;
-    transition: background-color 0.7s ease;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color:#163767;
+    transition: background-color 0.5s ease, transform 0.5s ease, color 0.5s ease;
+    border-color:#163767;
+    border-width: 1px;
+    border-style:solid;
     display: inline-block;
     text-decoration-line: none;
-    margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
 }
 nav a:hover {
-    background-color: #3498db;
+    background-color:#ffffff;
+    color: #000000;
+    transform: translateY(-5px);
+}
+#bandeau {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    background-color:#ffffff;
+    top:0;
+    left: 0;
+    align-items: center;
+}
+
+/* --- Ajouts pour la page Contact --- */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mon-formulaire {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.champ {
+    margin-bottom: 15px;
+}
+
+.champ label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.champ input, .champ textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.bouton-envoi {
+    width: 100%;
+    color: #ffffff;
+    background-color: #163767;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease, transform 0.5s ease, color 0.5s ease;
+}
+
+.bouton-envoi:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-5px);
+}
+
+.infos-pratiques {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    color: white;
+}
+/* Conteneur de la carte pour gérer l'arrondi et la taille */
+.carte-container {
+    width: 100%;
+    height: 250px; /* On augmente un peu la hauteur pour la lisibilité */
+    margin-top: 20px;
+    border-radius: 10px; /* Arrondi pour coller à ta DA */
+    overflow: hidden; /* Important : ça coupe les coins carrés de la carte Google */
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>EFREI - Département Informatique</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,76 @@
         </div>
         <img id="batiment" src = "../img/efrei-batiment.jpg" alt = "Batiment efrei" style="max-width:100%; height:auto;">
     </header>
-    <h1>Nos Formations</h1>
-    <p>Ceci est la page des formations du site web du département informatique de l'EFREI.</p>
+    <div id="hautformations">
+        <h1>Nos Formations</h1>
+        <p>Découvrez nos parcours Bachelor et Ingénieur en informatique</p><br><br>
+    </div>
+    <li>
+        <button class="postit-button" onclick="developper(this)">Voir notre Bachelor Informatique (Bac +3)</button>
+        <ul class="underlist">
+            <fieldset>
+            <li><p>Le Bachelor forme des professionnels opérationnels en développement logiciel, bases de données et systèmes d'information. Les étudiants acquièrent des compétences pratiques grâce à des projets et stages en entreprise.</p></li>
+            <li><p>Programmation Java/Python</p></li>
+            <li><p>Base de données SQL</p></li>
+            <li><p>Développement Web</p></li>
+            <li><p>Mathématiques appliquées</p></li>
+            <li><p>Gestion de projet</p></li>
+            </fieldset>
+        </ul>
+    </li>
+    <br>
+    <li>
+        <button class="postit-button" onclick="developper(this)">Voir notre Cycle Ingénieur Informatique (Bac +5)</button>
+        <ul class="underlist">
+            <fieldset>
+            <li><p>Architecture logicielle</p></li>
+            <li><p>Machine Learning</p></li>
+            <li><p>Cybersécurité</p></li>
+            <li><p>Cloud Computing</p></li>
+            <li><p>Big Data & Analytics</p></li>
+            </fieldset>
+        </ul>
+    </li>
+    <table id="tableau_formations">
+        <tr>
+            <th colspan="4">Semaine type</th>
+        </tr>
+        <tr>
+            <th>Jour</th>
+            <th>Cours</th>
+            <th>Enseignant</th>
+            <th>Horaire</th>
+        </tr>
+        <tr>
+            <td>Lundi</td>
+            <td>Algorithmie</td>
+            <td>Mr. Martin</td>
+            <td>9h - 14h</td>
+        </tr>
+        <tr>
+            <td>Mardi</td>
+            <td>Base de données</td>
+            <td>Mr. Dupont</td>
+            <td>8h - 12h</td>
+        </tr>
+        <tr>
+            <td>Mercredi</td>
+            <td>Réseaux</td>
+            <td>Mme. Bernard</td>
+            <td>15h - 19h</td>
+        </tr>
+        <tr>
+            <td>Jeudi</td>
+            <td>Intelligence Artificielle</td>
+            <td>Mr. Leroy</td>
+            <td>11h - 17h</td>
+        </tr>
+        <tr>
+            <td>Vendredi</td>
+            <td>Développement Web</td>
+            <td>Mme. Jean</td>
+            <td>9h - 14h</td>
+        </tr>
+    </table>
 </body>
 </html>

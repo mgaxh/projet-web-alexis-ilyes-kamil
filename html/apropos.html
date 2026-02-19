@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>EFREI - Département Informatique</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
-<body>
+<body id="a_propos">
     <header>
         <div id="bandeau">
         <img id="logo" src = "../img/efrei-logo.jpg" alt = "logo efrei" style="max-width:15%; height: auto;">
@@ -21,7 +22,43 @@
         </div>
         <img id="batiment" src = "../img/efrei-batiment.jpg" alt = "Batiment efrei" style="max-width:100%; height:auto;">
     </header>
-    <h1>A propos de nous</h1>
-    <p>Ceci est la page a propos de nous du site web du département informatique de l'EFREI.</p>
+    <h2>A propos de nous</h2><br>
+    <section class="apropos">
+    <div id="apropos">
+    <button onclick="Afficher_click(this)" class="titre_apropos">Une grande école du numérique au cœur de l'innovation</button>
+    <p class="para"><u>🏫 Présentation de l'EFREI</u><br><br>
+Fondée en 1936, l'EFREI Paris est une grande école d'ingénieurs spécialisée dans les technologies du numérique. Située aux portes de Paris, elle forme des experts dans des domaines clés tels que l'informatique, l'intelligence artificielle, la cybersécurité, la data science ou encore les systèmes embarqués.
+<br><br>L'école propose des formations allant du Bachelor au diplôme d'ingénieur, avec un fort accent mis sur l'innovation, la pratique et l'adaptation aux besoins du marché. Grâce à un enseignement exigeant et professionnalisant, l'EFREI prépare ses étudiants à devenir des acteurs majeurs de la transformation numérique.</p>
+    <button onclick="Afficher_click(this)" class="titre_apropos">L'ADN de l'EFREI : excellence, innovation et engagement</button>
+    <p class="para"><u>📜 Notre histoire et nos valeurs</u><br><br>
+Depuis sa création, l'EFREI a su évoluer avec les avancées technologiques tout en conservant ses valeurs fondatrices : excellence académique, esprit d'innovation et ouverture sur le monde.<br><br>
+L'école place l'humain au cœur de son projet pédagogique. Elle encourage la curiosité, l'engagement et la créativité de ses étudiants. Son ambition est de former des ingénieurs responsables, capables de relever les défis technologiques et sociétaux de demain.</p>
+    <button onclick="Afficher_click(this)" class="titre_apropos">Un campus connecté au monde</button>
+    <p class="para"><u>🌍 Une ouverture sur le monde</u><br><br>
+L'EFREI Paris développe une forte dimension internationale à travers de nombreux partenariats académiques dans le monde entier. Les étudiants ont la possibilité d'effectuer des semestres d'échange, des doubles diplômes ou des stages à l'étranger.<br><br>Certains programmes sont proposés en anglais afin de favoriser l'ouverture culturelle et l'intégration dans un environnement globalisé. Cette dimension internationale permet aux étudiants d'acquérir une expérience enrichissante et une véritable vision globale des enjeux du numérique.</p>
+    <button onclick="Afficher_click(this)" class="titre_apropos">Des liens étroits avec les entreprises</button>
+    <p class="para"><u>💼 Des liens étroits avec les entreprises</u><br><br>
+La professionnalisation est au cœur du modèle pédagogique de l'EFREI. Les étudiants réalisent des stages, des projets concrets et peuvent suivre leur formation en alternance.<br><br>L'école entretient des relations étroites avec de nombreuses entreprises du secteur technologique, offrant ainsi de réelles opportunités d'insertion professionnelle. Grâce à cette proximité avec le monde du travail, les diplômés de l'EFREI bénéficient d'une excellente employabilité et intègrent rapidement des postes à responsabilités.</p>
+    </div>
+    </section>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>EFREI — Informatique</h3>
+            <p>Former les ingénieurs du numérique de demain.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Informations</h3>
+            <ul>
+                <li><a href="#">À propos du projet</a></li>
+                <li>30-32 Avenue de la République, 94800 Villejuif</li>
+                <li><a href="mailto:contact@efrei.fr">contact@efrei.fr</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 EFREI Département Informatique — Projet académique</p>
+    </div>
+</footer>
 </body>
 </html>

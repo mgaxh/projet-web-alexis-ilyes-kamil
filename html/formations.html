@@ -25,32 +25,40 @@
         <h1>Nos Formations</h1>
         <p>Découvrez nos parcours Bachelor et Ingénieur en informatique</p><br><br>
     </div>
-    <li>
-        <button class="postit-button" onclick="developper(this)">Voir notre Bachelor Informatique (Bac +3)</button>
-        <ul class="underlist">
-            <fieldset>
-            <li><p>Le Bachelor forme des professionnels opérationnels en développement logiciel, bases de données et systèmes d'information. Les étudiants acquièrent des compétences pratiques grâce à des projets et stages en entreprise.</p></li>
-            <li><p>Programmation Java/Python</p></li>
-            <li><p>Base de données SQL</p></li>
-            <li><p>Développement Web</p></li>
-            <li><p>Mathématiques appliquées</p></li>
-            <li><p>Gestion de projet</p></li>
-            </fieldset>
-        </ul>
-    </li>
-    <br>
-    <li>
-        <button class="postit-button" onclick="developper(this)">Voir notre Cycle Ingénieur Informatique (Bac +5)</button>
-        <ul class="underlist">
-            <fieldset>
-            <li><p>Architecture logicielle</p></li>
-            <li><p>Machine Learning</p></li>
-            <li><p>Cybersécurité</p></li>
-            <li><p>Cloud Computing</p></li>
-            <li><p>Big Data & Analytics</p></li>
-            </fieldset>
-        </ul>
-    </li>
+    <ul class="formations-list">
+        <li>
+            <button class="postit-button" onclick="developper(this)">Voir notre Bachelor Informatique (Bac +3)</button>
+            <ul class="underlist">
+                <p>Le Bachelor forme des professionnels opérationnels en développement logiciel
+                     bases de données et systèmes d'information. 
+                     Les étudiants acquièrent des compétences pratiques 
+                     grâce à des projets et stages en entreprise.</p>
+                <br>
+                <p>Modules clés : </p>
+                <li><p>Programmation Java/Python</p></li>
+                <li><p>Base de données SQL</p></li>
+                <li><p>Développement Web</p></li>
+                <li><p>Mathématiques appliquées</p></li>
+                <li><p>Gestion de projet</p></li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            <button class="postit-button" onclick="developper(this)">Voir notre Cycle Ingénieur Informatique (Bac +5)</button>
+            <ul class="underlist">
+                <p>Le cycle ingénieur prépare les étudiants à des postes 
+                    de responsabilité en architecture logicielle, 
+                    intelligence artificielle, cybersécurité et systèmes distribués.</p>
+                <br>
+                <p>Modules clés : </p>
+                <li><p>Architecture logicielle</p></li>
+                <li><p>Machine Learning</p></li>
+                <li><p>Cybersécurité</p></li>
+                <li><p>Cloud Computing</p></li>
+                <li><p>Big Data & Analytics</p></li>
+            </ul>
+        </li>
+    </ul>
     <table id="tableau_formations">
         <tr>
             <th colspan="4">Semaine type</th>
@@ -92,5 +100,24 @@
             <td>9h - 14h</td>
         </tr>
     </table>
+        <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>EFREI — Informatique</h3>
+                <p>Former les ingénieurs du numérique de demain.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="#">À propos du projet</a></li>
+                    <li>30-32 Avenue de la République, 94800 Villejuif</li>
+                    <li><a href="mailto:contact@efrei.fr">contact@efrei.fr</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 EFREI Département Informatique — Projet académique</p>
+        </div>
+    </footer>
 </body>
 </html>

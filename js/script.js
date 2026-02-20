@@ -19,3 +19,17 @@ function Afficher_click(bouton) {
         }
     }
 }
+
+function submit_contact() { 
+    if (document.getElementById('nom').value==="" ||
+    document.getElementById('email').value==="" ||
+    document.getElementById('message').value===""){
+        alert("Veuillez remplir tous les champs !");
+    } else {
+    var res = confirm("Etes-vous sûr de vouloir envoyer ?"); 
+    if (res == true) { 
+        alert("Informations envoyées avec succès!"); 
+        }
+    }
+    location.reload();
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>EFREI - Département Informatique</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
     <header>
@@ -42,7 +43,7 @@
                 <textarea id="message" name="message" rows="6" placeholder="Votre message..."></textarea>
             </div>
             
-            <button type="submit" class="bouton-envoi">Envoyer</button>
+            <button onclick="submit_contact()" type="submit" class="bouton-envoi">Envoyer</button>
         </form>
 
         <div class="infos-pratiques">
@@ -50,7 +51,6 @@
             <p>📍 30-32 Avenue de la République, 94800 Villejuif</p>
             <p>📞 +33 1 23 45 67 89</p>
             <p>✉️ contact@efrei.fr</p>
-            
             <div class="carte-container">
                 <iframe
                     src="https://maps.google.com/maps?q=Efrei+Villejuif&t=&z=15&ie=UTF8&iwloc=&output=embed"
